@@ -120,8 +120,24 @@ import { Title }     from '@angular/platform-browser';
  ```
 
 
-## HOW TO CREATE NEW COMPONENT
+## 9. HOW TO CREATE NEW COMPONENT
 __ng generate component componentName__
 
 This will generate new components with all the related files (.ts, .html, .css) and it will pass and import in app.module.ts
 
+
+## 10. Add META TAG
+
+Go to your component like about.component.ts
+```javascript
+import { Meta } from '@angular/platform-browser';
+
+public constructor(meta: Meta) {
+    // Sets the <meta> tag for the page
+    meta.addTags([
+      { name: 'keyword', content: 'About Us, hello travel india, about hello travel india' },
+      { name: 'description', content: 'Hello Travel India, offers a wide range of destinations from the mainstream to the exotic ones.' },
+    ]);
+
+  }
+```
