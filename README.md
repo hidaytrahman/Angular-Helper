@@ -141,3 +141,74 @@ public constructor(meta: Meta) {
 
   }
 ```
+
+
+## 11. How to Implement _Http Service_ in angular 4 - GET method - Using Local JSON File
+### Import Http Module in _app.module.ts_
+```javascript
+import { HttpModule } from '@angular/http';
+```
+
+### Pass **HttpModule** in _Imports_
+```javascript
+imports: [
+    HttpModule
+]
+```
+### Write all below code in your services.ts
+```javascript	
+import { Injectable } from '@angular/core';
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/map';
+
+@Injectable()
+export class PackageService {
+ 
+  packagesUrl:string =  "assets/data/packages.json";
+  constructor(private http: Http) { }
+  
+  getPackages() {
+    return this.http.get(this.packagesUrl)
+      .map(response => response.json());
+  }
+
+}
+```
+__Go to the component where you want to access json file, In my case I've packages.component.ts__
+### import your service here
+```javascript
+import { PackageService } from '../data/packages.service';
+```
+
+### add _PackageService_ to provider
+```javascript
+@Component({
+    selector: "packages-section",
+    templateUrl: "../view/packages.component.html",
+    providers:[PackageService]
+})
+
+constructor(packageService: PackageService){
+	packageService.getPackages().subscribe(
+		people => {
+		  this.totalPackages = people;
+		  console.log("Packages is "+this.totalPackages.packageLocation)
+		},
+		error => console.error("Error : " + error),
+		() => console.info('Packages Completed')
+	  );
+}
+```
+## LOCAL JSON Implementation
+__Regarding JSON file, you have to keep _myData.json_ file in _assets/data folder_
+
+Go to **angular-cli.json** and add data in **assets** something like below
+```javascript
+"assets": [
+        "assets",
+        "favicon.ico",
+        "data" // this is your json path
+      ],
+```
+
+### Congrats!!! Now You will have to access JSON file :)
