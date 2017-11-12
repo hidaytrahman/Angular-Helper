@@ -212,3 +212,6 @@ Go to **angular-cli.json** and add data in **assets** something like below
 ```
 
 ### Congrats!!! Now You will have to access JSON file :)
+
+
+# FEEL FREE To ADD MORE :)
