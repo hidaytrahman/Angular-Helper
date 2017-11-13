@@ -1,5 +1,5 @@
 
-# Angular4 Properties Syntax
+# Angular4 Properties/ DOM Syntax
 
 
 ## 1.	Property Binding Example
@@ -40,4 +40,17 @@ You can also define a different template expression:
 And change the **buttonStatus** property to:
 ```javascript
 buttonStatus = 'enabled';
+```
+
+## 3. Parse HTML in Angular 4+
+
+In case you have html in variable.
+```javascript
+ myField = "<h3>I am the heading 3 </h3>";
+```
+
+Here in html file just use **innerHtml** attribute
+```javascript
+ <div [innerHTML]="myField"></div>
+ <div innerHTML="{{myField}}"></div>
 ```
