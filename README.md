@@ -18,6 +18,9 @@ after inside angular-cli.json (inside project root folder) find styles and add a
 ## 2.	BOOTSTRAP 4 Only
 __npm install --save bootstrap@4.0.0-alpha.6__
 
+### Update For Bootstrap 4 (currently in beta):
+__npm install bootstrap@next --save__
+
 ## 3.	BOOTSTRAP 4 with font awesome
 __npm install --save bootstrap@4.0.0-alpha.6 font-awesome__
  
