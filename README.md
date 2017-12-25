@@ -218,8 +218,24 @@ Go to **angular-cli.json** and add data in **assets** something like below
         "data" // this is your json path
       ],
 ```
-
 ### Congrats!!! Now You will have to access JSON file :)
+
+## IF ELSE
+#### TS
+```javascript
+  serverCreationStatus = "No server created";
+  serverName = "";
+  serverCreated = false;
+```
+
+#### Template
+```html
+<p *ngIf="serverCreated; else noServer">{{ serverCreationStatus }}</p>
+ <ng-template #noServer>
+      <p>No server was created.</p>
+ </ng-template>
+ ```
+
 
 
 # FEEL FREE To ADD MORE :)
