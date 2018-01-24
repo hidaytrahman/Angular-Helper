@@ -54,3 +54,12 @@ Here in html file just use **innerHtml** attribute
  <div [innerHTML]="myField"></div>
  <div innerHTML="{{myField}}"></div>
 ```
+
+##4 Cannot read property 'anyVariable' of undefined
+The safe navigation operator **( ?. )** and null property paths
+**The Angular safe navigation operator (?.) is a fluent and convenient way to guard against null and undefined values in property paths.** Here it is, protecting against a view render failure if the currentHero is null.
+
+```javascript
+The current hero's name is {{currentHero?.name}}
+```
+[More Details [+]](https://angular.io/guide/template-syntax#!#ref-vars)
