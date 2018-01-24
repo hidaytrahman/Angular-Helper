@@ -1,5 +1,5 @@
 
-# Angular4 Properties/ DOM Syntax
+# Angular5 Properties/ DOM Syntax
 
 
 ## 1.	Property Binding Example
@@ -42,7 +42,7 @@ And change the **buttonStatus** property to:
 buttonStatus = 'enabled';
 ```
 
-## 3. Parse HTML in Angular 4+
+## 3. Parse HTML in Angular 5+
 
 In case you have html in variable.
 ```javascript
@@ -55,11 +55,12 @@ Here in html file just use **innerHtml** attribute
  <div innerHTML="{{myField}}"></div>
 ```
 
-##4 Cannot read property 'anyVariable' of undefined
+## 4 Cannot read property 'name' of undefined
+
 The safe navigation operator **( ?. )** and null property paths
 **The Angular safe navigation operator (?.) is a fluent and convenient way to guard against null and undefined values in property paths.** Here it is, protecting against a view render failure if the currentHero is null.
 
 ```javascript
-The current hero's name is {{currentHero?.name}}
+The current hero's name is {{anyObj?.name}}
 ```
 [More Details [+]](https://angular.io/guide/template-syntax#!#ref-vars)
