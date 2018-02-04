@@ -1,9 +1,18 @@
 # Angular4-Helper
 Just for usual things in Angular 4 implementations
 
-## 1.	BOOTSTRAP 3 
- __npm install --save bootstrap__
+## Install Angular 
+__ng new project_name__
 
+## Install Angular with LESS
+__ng new project_name --style less__
+
+## Install Angular with SASS
+__ng new project_name --style scss__
+
+
+## BOOTSTRAP 3 
+ __npm install --save bootstrap__
 
 after inside angular-cli.json (inside project root folder) find styles and add a bootstrap css like this:
 
@@ -15,7 +24,7 @@ after inside angular-cli.json (inside project root folder) find styles and add a
 ```
 
 
-## 2.	BOOTSTRAP 4 Only
+## BOOTSTRAP 4 Only
 __npm install --save bootstrap@4.0.0-alpha.6__
 
 ### Update For Bootstrap 4 (currently in beta):
@@ -26,11 +35,11 @@ __npm install --save tether__
 
 __npm install --save jquery__
 
-## 3.	BOOTSTRAP 4 with font awesome
+## BOOTSTRAP 4 with font awesome
 __npm install --save bootstrap@4.0.0-alpha.6 font-awesome__
  
 
-## 4. NgBootstrap (For Carousal, Tabs kind of things)
+##  NgBootstrap (For Carousal, Tabs kind of things)
 
 __npm install --save @ng-bootstrap/ng-bootstrap__
 
@@ -73,14 +82,9 @@ Bootstra p 4 Nav  support add below lines in angular-cli.json
 
 
 	
-## 5. LESS INSTALL
-__ng new project_name --style less__
-
-## 6. SASS INSTALL
-__ng new project_name --style scss__
 
 
-## 7. INSTALL FA (Font Awesome) Complete
+##  INSTALL FA (Font Awesome) Complete
  __npm install --save font-awesome angular-font-awesome__
  Import the module:
 ```javascript
@@ -96,10 +100,17 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awes
 export class AppModule { }
 ```
 
+## HOW TO CREATE NEW COMPONENT
+__ng generate component componentName__
+
+### using short form
+__ng g c componentName__
+
+This will generate new components with all the related files (.ts, .html, .css) and it will pass and import in app.module.ts
 
 
 
-## 8. HOW TO CHANGE TITLE WITH COMPONENTS or MENU
+## HOW TO CHANGE TITLE WITH COMPONENTS or MENU
 
 app.module.ts
 ```javascript
@@ -128,13 +139,7 @@ import { Title }     from '@angular/platform-browser';
  ```
 
 
-## 9. HOW TO CREATE NEW COMPONENT
-__ng generate component componentName__
-
-This will generate new components with all the related files (.ts, .html, .css) and it will pass and import in app.module.ts
-
-
-## 10. Add META TAG
+## Add META TAG
 
 Go to your component like about.component.ts
 ```javascript
@@ -151,7 +156,7 @@ public constructor(meta: Meta) {
 ```
 
 
-## 11. How to Implement _Http Service_ in angular 4 - GET method - Using Local JSON File
+## How to Implement _Http Service_ in angular 4 - GET method - Using Local JSON File
 ### Import Http Module in _app.module.ts_
 ```javascript
 import { HttpModule } from '@angular/http';
