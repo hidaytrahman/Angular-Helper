@@ -10,6 +10,12 @@ __ng new project_name --style less__
 ## Install Angular with SASS
 __ng new project_name --style scss__
 
+## Upgrade Angular CLI to the latest version
+__npm install -g @angular/cli@latest__
+
+**In the project folder**
+
+__npm install --save-dev @angular/cli@latest__
 
 ## BOOTSTRAP 3 
  __npm install --save bootstrap__
