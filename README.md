@@ -247,6 +247,10 @@ Go to **angular-cli.json** and add data in **assets** something like below
  </ng-template>
  ```
 
+## Upload Angular 4 Local To Live Server in Subfolder - FIXES
+When you're deploying to non-root path within a domain, you'll need to manually update the ```<base href="/">``` tag in your ```dist/index.html```.
 
+In this case, you will need to update to ```<base href="/angular2-test/">``` I believe.
+Thanks To [filipesilva](https://github.com/angular/angular-cli/issues/1080)
 
 # FEEL FREE To ADD MORE :)
