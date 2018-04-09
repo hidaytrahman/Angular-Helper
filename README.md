@@ -3,17 +3,21 @@ Sharing fixes for issue which we're getting while development angular app
 
 --------
 ### VIEW ALSO:
-* [PROPERTIES](https://hidaytrahman.github.io/Angular-Helper/property/)
+
+| Properties | Action |
+| :---         |     :---:    |
+| PROPERTIES   | [View Details](https://hidaytrahman.github.io/Angular-Helper/property/)     |
+
 --------
 
 
 ## Install Angular 
 __ng new project_name__
 
-## Install Angular with LESS
+### Install Angular with LESS
 __ng new project_name --style less__
 
-## Install Angular with SASS
+### Install Angular with SASS
 __ng new project_name --style scss__
 
 ## Upgrade Angular CLI to the latest version
