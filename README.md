@@ -1,5 +1,5 @@
-# Angular4-Helper
-Just for usual things in Angular 4 implementations 
+# ng-helper
+Sharing fixes for issue which we're getting while development angular app
 
 --------
 ### VIEW ALSO:
