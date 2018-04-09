@@ -7,6 +7,7 @@ Sharing fixes for issue which we're getting while development angular app
 | Properties | Action |
 | :---         |     :---:    |
 | PROPERTIES   | [View Details](https://hidaytrahman.github.io/ng-helper/property/)     |
+| Routing   | [Routing](#implement-routing)  |
 
 --------
 
