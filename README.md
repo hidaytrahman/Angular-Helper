@@ -7,6 +7,18 @@ Sharing fixes for issue which we're getting while development angular app
 | Properties | Action |
 | :---         |     :---:    |
 | PROPERTIES   | [View Details](https://hidaytrahman.github.io/ng-helper/property/)     |
+| Install Angular   | [Go](#install-angular)  |
+| Upgrade Angular CLI to the latest version   | [Go](#upgrade-angular-cli-to-the-latest-version)  |
+| BOOTSTRAP Installation   | [Go](#bootstrap-3)  |
+| Install jQuery and Tether   | [Go](#install-jquery-and-tether)  |
+| NgBootstrap   | [Go](#ngbootstrap-for-carousal-tabs-kind-of-things)  |
+| INSTALL FA (Font Awesome)   | [Go](#install-fa-font-awesome-complete)  |
+| CREATE NEW COMPONENT   | [Go](#how-to-create-new-component)  |
+| CHANGE TITLE   | [Go](#how-to-change-title-with-components-or-menu)  |
+| META TAG   | [Go](#add-meta-tag)  |
+| Http Service   | [Go](#how-to-implement-http-service-in-angular-4---get-method---using-local-json-file)  |
+| IF ELSE | [Go](#if-else) |
+| Angular 4 Local To Live Server in Subfolder  | [Go](#upload-angular-4-local-to-live-server-in-subfolder---fixes) |
 | Routing   | [Routing](#implement-routing)  |
 
 --------
