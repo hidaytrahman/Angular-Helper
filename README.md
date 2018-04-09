@@ -263,17 +263,22 @@ When you're deploying to non-root path within a domain, you'll need to manually 
 In this case, you will need to update to ```<base href="/subfolder-name/">``` I believe.
 Thanks To [filipesilva](https://github.com/angular/angular-cli/issues/1080)
 
-## Implement ROUTING 
+## Implement ROUTING
+run below command
+
 __ng generate module app-routing --flat --module=app__
 
 ```--flat``` puts the file in ```src/app``` instead of its own folder.
 ```--module=app``` tells the CLI to register it in the imports array of the AppModule.
 
 Check below lines in ```app.module.ts``` file
-```import { AppRoutingModule } from './/app-routing.module';```
+
+``` import { AppRoutingModule } from './/app-routing.module';
 imports: [
     AppRoutingModule
-    ]
+   
+   ]
+```
 
 Also Check below lines in ```app.routing.module.ts``` file
 
