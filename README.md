@@ -260,7 +260,39 @@ Go to **angular-cli.json** and add data in **assets** something like below
 ## Upload Angular 4 Local To Live Server in Subfolder - FIXES
 When you're deploying to non-root path within a domain, you'll need to manually update the ```<base href="/">``` tag in your ```dist/index.html```.
 
-In this case, you will need to update to ```<base href="/angular2-test/">``` I believe.
+In this case, you will need to update to ```<base href="/subfolder-name/">``` I believe.
 Thanks To [filipesilva](https://github.com/angular/angular-cli/issues/1080)
+
+## Implement ROUTING 
+__ng generate module app-routing --flat --module=app__
+
+```--flat``` puts the file in ```src/app``` instead of its own folder.
+```--module=app``` tells the CLI to register it in the imports array of the AppModule.
+
+Check below lines in ```app.module.ts``` file
+```import { AppRoutingModule } from './/app-routing.module';```
+imports: [
+    AppRoutingModule
+    ]
+
+Also Check below lines in ```app.routing.module.ts``` file
+
+```import { RouterModule, Routes } from '@angular/router';
+import { CheckoutComponent } from './checkout/checkout.component';
+
+const routes: Routes = [
+  { path: 'heroes', component: HeroesComponent }
+];
+
+@NgModule({
+  imports: [
+    RouterModule.forRoot(routes)
+  ],
+  exports: [
+    RouterModule
+  ]
+})
+export class AppRoutingModule { }
+```
 
 # FEEL FREE To ADD MORE :)
