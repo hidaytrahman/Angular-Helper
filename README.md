@@ -276,7 +276,7 @@ Two option to fix, I will suggest the first one. because this will make your app
 
 **1. Make Builded folder smart to get directory automatically**
 
-Use below line insted of ```<base href="/subfolder-name/">``` in ```src/index.html``` file.
+Use below line insted of ```<base href="/">``` in ```src/index.html``` file.
 
 eg.:
 
@@ -284,11 +284,14 @@ eg.:
 
 This will get directory automatically and set that to base href.
 
-**2. When you're deploying to non-root path within a domain, you'll need to manually update the ```<base href="/">``` tag in your ```dist/index.html```.
+**2. Update ```index.html``` file at every build**
+
+When you're deploying to non-root path within a domain, you'll need to manually update the ```<base href="/">``` tag in your ```dist/index.html```.
 
 In this case, you will need to update to ```<base href="/subfolder-name/">``` 
 Thanks To [filipesilva](https://github.com/angular/angular-cli/issues/1080)
 
+Expected path: www.domain.com/subfolder/
 
 
 ## Implement ROUTING
