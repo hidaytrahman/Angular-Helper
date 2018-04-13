@@ -19,7 +19,8 @@ Sharing fixes for issue which we're getting while development angular app
 | Http Service   | [Go](#how-to-implement-http-service-in-angular-4---get-method---using-local-json-file)  |
 | IF ELSE | [Go](#if-else) |
 | Angular 4 Local To Live Server in Subfolder  | [Go](#upload-angular-4-local-to-live-server-in-subfolder---fixes) |
-| Routing   | [Routing](#implement-routing)  |
+| Routing   | [Go](#implement-routing)  |
+| Fixes - Refeshing browser issues on Server   | [Go](#implement-routing)  |
 
 --------
 
@@ -312,5 +313,25 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 ```
+
+
+## (FIXES) - Refeshing browser issues (404) on Server
+
+Import [LocationStrategy](https://angular.io/api/common/LocationStrategy) and [HashLocationStrategy](https://angular.io/api/common/HashLocationStrategy) module into ```app.module.ts```
+
+
+```import { LocationStrategy, HashLocationStrategy } from '@angular/common';```
+
+
+Put this ```{provide: LocationStrategy, useClass: HashLocationStrategy}``` into Provider
+
+
+eg:
+```
+providers: [
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
+   ]
+```
+
 
 # FEEL FREE To ADD MORE :)
