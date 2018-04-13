@@ -20,7 +20,7 @@ Sharing fixes for issue which we're getting while development angular app
 | IF ELSE | [Go](#if-else) |
 | Angular 4 Local To Live Server in Subfolder  | [Go](#upload-angular-4-local-to-live-server-in-subfolder---fixes) |
 | Routing   | [Go](#implement-routing)  |
-| Fixes - Refeshing browser issues on Server   | [Go](#implement-routing)  |
+| Fixes - Refeshing browser issues on Server   | [Go](#fixes---refeshing-browser-issues-404-on-server)  |
 
 --------
 
