@@ -272,20 +272,23 @@ Go to **angular-cli.json** and add data in **assets** something like below
  ```
 
 ## Upload Angular 4 Local To Live Server in Subfolder - FIXES
-When you're deploying to non-root path within a domain, you'll need to manually update the ```<base href="/">``` tag in your ```dist/index.html```.
+Two option to fix, I will suggest the first one. because this will make your app smart and you don't need to change anything in ```dist/index.html```
 
-In this case, you will need to update to ```<base href="/subfolder-name/">``` 
-Thanks To [filipesilva](https://github.com/angular/angular-cli/issues/1080)
+**1. Make Builded folder smart to get directory automatically**
 
-**Make Builded folder smart to get directory automatically**
-
-Use below line insted of ```<base href="/subfolder-name/">```
+Use below line insted of ```<base href="/subfolder-name/">``` in ```src/index.html``` file.
 
 eg.:
 
 ``` <script> document.write('<base href="' + document.location + '" />');</script>```
 
 This will get directory automatically and set that to base href.
+
+**2. When you're deploying to non-root path within a domain, you'll need to manually update the ```<base href="/">``` tag in your ```dist/index.html```.
+
+In this case, you will need to update to ```<base href="/subfolder-name/">``` 
+Thanks To [filipesilva](https://github.com/angular/angular-cli/issues/1080)
+
 
 
 ## Implement ROUTING
