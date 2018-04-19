@@ -26,20 +26,20 @@ Sharing fixes for issue which we're getting while development angular app
 
 
 ## Install Angular 
-__ng new project_name__
+```ng new project_name```
 
 ### Install Angular with LESS
 ```ng new project_name --style less```
 
 ### Install Angular with SASS
-__ng new project_name --style scss__
+```ng new project_name --style scss```
 
 ## Upgrade Angular CLI to the latest version
-__npm install -g @angular/cli@latest__
+```npm install -g @angular/cli@latest```
 
 **In the project folder**
 
-__npm install --save-dev @angular/cli@latest__
+```npm install --save-dev @angular/cli@latest```
 
 ## BOOTSTRAP 3 
  __npm install --save bootstrap__
@@ -55,23 +55,23 @@ after inside angular-cli.json (inside project root folder) find styles and add a
 
 
 ## BOOTSTRAP 4 Only
-__npm install --save bootstrap@4.0.0-alpha.6__
+```npm install --save bootstrap```
 
 ### Update For Bootstrap 4 (currently in beta):
-__npm install bootstrap@next --save__
+```npm install bootstrap@next --save```
 
 ## Install jQuery and Tether
-__npm install --save tether__
+```npm install --save tether```
 
-__npm install --save jquery__
+```npm install --save jquery```
 
 ## BOOTSTRAP 4 with font awesome
-__npm install --save bootstrap@4.0.0-alpha.6 font-awesome__
+```npm install --save bootstrap font-awesome```
  
 
 ##  NgBootstrap (For Carousal, Tabs kind of things)
 
-__npm install --save @ng-bootstrap/ng-bootstrap__
+```npm install --save @ng-bootstrap/ng-bootstrap```
 
 Once installed you need to import our main module.
 
@@ -81,7 +81,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 -----------------------------------------------------------
 ### Adding full Bootstrap component JS support
-// version 4
+**version 4**
 **Note:** from Bootstrap site 
   
 Some plugins and CSS components depend on other plugins. If you include plugins individually, 
@@ -90,7 +90,7 @@ jQuery (this means jQuery must be included before the plugin files).
 Consult our bower.json to see which versions of jQuery are supported.
 https://v4-alpha.getbootstrap.com/getting-started/javascript/
 
-In `.angular-cli.json` add the following lines to the scripts section:
+In ```.angular-cli.json``` add the following lines to the scripts section:
 
 # version 4.x
 ```javascript
@@ -115,7 +115,7 @@ Bootstra p 4 Nav  support add below lines in angular-cli.json
 
 
 ##  INSTALL FA (Font Awesome) Complete
- __npm install --save font-awesome angular-font-awesome__
+ ```npm install --save font-awesome angular-font-awesome```
  Import the module:
 ```javascript
 import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
@@ -131,10 +131,10 @@ export class AppModule { }
 ```
 
 ## HOW TO CREATE NEW COMPONENT
-__ng generate component componentName__
+```ng generate component componentName```
 
 ### using short form
-__ng g c componentName__
+```ng g c componentName```
 
 This will generate new components with all the related files (.ts, .html, .css) and it will pass and import in app.module.ts
 
