@@ -29,7 +29,7 @@ Sharing fixes for issue which we're getting while development angular app
 __ng new project_name__
 
 ### Install Angular with LESS
-**ng new project_name --style less**
+```ng new project_name --style less```
 
 ### Install Angular with SASS
 __ng new project_name --style scss__
