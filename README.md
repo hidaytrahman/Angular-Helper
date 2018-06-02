@@ -130,6 +130,30 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awes
 export class AppModule { }
 ```
 
+### Font Awesome CSS ONLY
+	npm install --save font-awesome
+```javascript
+// in angular.json
+"build": {
+  "options": {
+    "styles": [
+      "node_modules/font-awesome/css/font-awesome.css"
+      "styles.css"
+    ],
+  }
+}
+```
+**Using SASS**
+Add the following to _variables.scss:
+```javascript
+$fa-font-path : '../node_modules/font-awesome/fonts';
+```
+
+__In styles.scss add the following:__
+```javascript
+@import 'variables';
+@import '../node_modules/font-awesome/scss/font-awesome';
+```
 ## HOW TO CREATE NEW COMPONENT
 ```ng generate component componentName```
 
