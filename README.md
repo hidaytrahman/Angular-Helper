@@ -42,8 +42,6 @@ Sharing fixes for issue which we're getting while development angular app
 
 ```npm install --save-dev @angular/cli@latest```
 
-## BOOTSTRAP 3 
- __npm install --save bootstrap__
 
 after inside angular-cli.json (inside project root folder) find styles and add a bootstrap css like this:
 
@@ -55,7 +53,7 @@ after inside angular-cli.json (inside project root folder) find styles and add a
 ```
 
 
-## BOOTSTRAP 4 Only
+## BOOTSTRAP 4 
 ```npm install --save bootstrap```
 
 ### Update For Bootstrap 4 (currently in beta):
@@ -68,7 +66,23 @@ after inside angular-cli.json (inside project root folder) find styles and add a
 
 ## BOOTSTRAP 4 with font awesome
 ```npm install --save bootstrap font-awesome```
- 
+
+## Install Angular FlexLayout
+```npm install @angular/flex-layout --save```
+
+ ### Import the Angular Flex-Layout NgModule
+ **src/app/app.module.ts**
+ ```
+ import {NgModule} from '@angular/core';
+import {FlexLayoutModule} from '@angular/flex-layout';
+// other imports 
+@NgModule({
+  imports: [FlexLayoutModule],
+  ...
+})
+export class PizzaPartyAppModule {}
+```
+ [Ref](https://github.com/angular/flex-layout/wiki/Using-Angular-CLI)
 
 ##  NgBootstrap (For Carousal, Tabs kind of things)
 
