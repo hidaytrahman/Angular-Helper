@@ -6,6 +6,7 @@ Sharing fixes for issue which we're getting while development angular app
 
 | Properties | Action |
 | :---         |     :---:    |
+| ng6 Specific   | [View Details](https://hidaytrahman.github.io/ng-helper/angular6/)     |
 | PROPERTIES   | [View Details](https://hidaytrahman.github.io/ng-helper/property/)     |
 | Install Angular   | [Go](#install-angular)  |
 | Upgrade Angular CLI to the latest version   | [Go](#upgrade-angular-cli-to-the-latest-version)  |
