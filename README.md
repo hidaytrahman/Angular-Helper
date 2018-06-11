@@ -14,6 +14,8 @@ Sharing fixes for issue which we're getting while development angular app
 | Install jQuery and Tether   | [Go](#install-jquery-and-tether)  |
 | NgBootstrap   | [Go](#ngbootstrap-for-carousal-tabs-kind-of-things)  |
 | INSTALL FA (Font Awesome)   | [Go](#install-fa-font-awesome-complete)  |
+| INSTALL FlexLayout  | [Go](#install-angular-flexlayout)  |
+
 | CREATE NEW COMPONENT   | [Go](#how-to-create-new-component)  |
 | CHANGE TITLE   | [Go](#how-to-change-title-with-components-or-menu)  |
 | META TAG   | [Go](#add-meta-tag)  |
