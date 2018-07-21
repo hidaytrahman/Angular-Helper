@@ -1,3 +1,58 @@
-<p>
-  index works!
-</p>
+<div class="main-content" fxLayout="row" fxLayout.xs="column" fxLayoutGap="20px" fxLayoutAlign="center stretch">
+  <aside class="channel-details">
+    <div>
+      <img [src]="channelDetails?.thumbnails?.medium?.url" alt="">
+      <h2>{{channelDetails?.localized?.title}}</h2>
+      <p>{{channelDetails?.localized?.description}}</p>
+      <p>{{channelDetails?.country}}</p>
+      <p>Active from : {{channelDetails?.publishedAt | date:'yyyy'}}</p>
+
+      <br>
+      <a href="http://www.youtube.com/{{channelDetails?.customUrl}}" mat-raised-button color="basic" target="_blank">Jump to youtube</a>
+      <br>
+    </div>
+  </aside>
+
+  <article class="channel-articles">
+    <h1>{{channelDetails?.localized?.title}}</h1>
+    <app-box-menu></app-box-menu>
+    <br>
+
+    <div class="all-videos">
+      <div class="each-videos" *ngFor="let video of allVideos">
+          <mat-card class="example-card">
+              <mat-card-header>
+                <div mat-card-avatar><img src="{{channelDetails?.thumbnails?.default?.url}}" width="40"></div>
+                <mat-card-title>{{video?.snippet?.title}}</mat-card-title>
+                <mat-card-subtitle>{{video?.snippet?.publishedAt}}</mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image src="{{video?.snippet?.thumbnails?.high?.url}}" alt="{{video?.snippet?.title}}">
+              <mat-card-content>
+                <p>
+                {{video?.snippet?.description}}
+                </p>
+              </mat-card-content>
+              <mat-card-actions>
+                <button mat-button><mat-icon>favorite</mat-icon> LIKE</button>
+                <button mat-button><mat-icon>forward</mat-icon> SHARE</button>
+                <a mat-button href="https://www.youtube.com/watch?v={{video?.id?.videoId}}" target="_blank"> <mat-icon>remove_red_eye</mat-icon> Watch</a>
+                
+              </mat-card-actions>
+            </mat-card> 
+      </div>
+    
+
+
+    </div>
+
+    <div class="all-vid-table">
+        <mat-form-field>
+            <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+          </mat-form-field>
+        
+          
+        
+
+    </div>
+  </article>
+</div>

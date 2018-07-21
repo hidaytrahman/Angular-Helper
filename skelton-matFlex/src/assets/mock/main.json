@@ -1,0 +1,17 @@
+{
+  "videos": [
+    { "id": 1, "title": "json-server", "author": "typicode" }, 
+	{ "id": 2, "title": "ayat rahman", "author": "ayat" }
+	
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  
+  "users": [
+    { "id": 1, "username": "ayat", "password": "ayat", "mobile": "9910555"},
+	{ "id": 2, "username": "hidayt", "password": "hidayt", "mobile": "566588555"},
+	{ "id": 3, "username": "ayat", "password": "ayat", "mobile": "9910555"}
+  ],
+  "profile": { "name": "typicode" }
+}

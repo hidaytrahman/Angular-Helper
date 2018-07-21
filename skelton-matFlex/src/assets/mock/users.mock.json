@@ -1,0 +1,43 @@
+{
+    "kind": "youtube#channelListResponse",
+    "etag": "\"XI7nbFXulYBIpL0ayR_gDh3eu1k/VnXKOTz1jjJMdKVexyUGFgYFrvw\"",
+    "pageInfo": {
+        "totalResults": 1,
+        "resultsPerPage": 5
+    },
+    "items": [
+        {
+            "kind": "youtube#channel",
+            "etag": "\"XI7nbFXulYBIpL0ayR_gDh3eu1k/gDmH3MSmBN-zo5q4FXStGV9OeQY\"",
+            "id": "UCP_vlPQ7U8Sdg7ZrAxLatBw",
+            "snippet": {
+                "title": "Hidayt Rahman",
+                "description": "Entertainment, Knowledge,  Technology  Idea etc",
+                "customUrl": "hidaytrahman",
+                "publishedAt": "2012-09-04T11:05:26.000Z",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-DuzXz416n4M/AAAAAAAAAAI/AAAAAAAAAAA/qhU6Yrc28DM/s88-c-k-no-mo-rj-c0xffffff/photo.jpg",
+                        "width": 88,
+                        "height": 88
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-DuzXz416n4M/AAAAAAAAAAI/AAAAAAAAAAA/qhU6Yrc28DM/s240-c-k-no-mo-rj-c0xffffff/photo.jpg",
+                        "width": 240,
+                        "height": 240
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-DuzXz416n4M/AAAAAAAAAAI/AAAAAAAAAAA/qhU6Yrc28DM/s800-c-k-no-mo-rj-c0xffffff/photo.jpg",
+                        "width": 800,
+                        "height": 800
+                    }
+                },
+                "localized": {
+                    "title": "Hidayt Rahman",
+                    "description": "Entertainment, Knowledge,  Technology  Idea etc"
+                },
+                "country": "IN"
+            }
+        }
+    ]
+}
