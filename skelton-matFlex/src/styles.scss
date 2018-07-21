@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+// Fonts
+// font-family: 'Gaegu', cursive;
+// font-family: 'Merienda', cursive;
+// font-family: 'PT Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Gaegu|Merienda|PT+Sans');
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Gaegu', cursive;
+}
+
+.container-fixed {
+    max-width: 1600px;
+}
+
+.icons {
+    padding: 0 14px;
+}
+
+
+.img-fluid {
+    width: 100%;
+}
+
+.logo {
+    height: 85px;
+}
+
+.box-menus div {
+    background: #cccccc;
+}
+
+.each-info-box {
+    padding: 10px;
+}
+
+
+.bg-primary {
+    background: red;
+    background: linear-gradient(red,#da1309);
+}
