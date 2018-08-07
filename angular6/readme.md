@@ -71,12 +71,12 @@ constructor(private httpClient:HttpClient){
     }
 
   getUsers(): Observable<any> {
-        **const headerOptions = {
+        const headerOptions = {
             headers = new HttpHeaders({
                 'Content-Type' : 'application/json',
                 'Authorization' : 'Basic keys'
             })
-        }**
+        }
         return this.httpClient.get(this.urlUsers, headerOptions)
     } 
   }  
@@ -109,3 +109,48 @@ __Notes__
 
 * _you can use ```atob()``` function for encrypting data in require format eg. (username:password) and you can put in Authorization key with Basic and encrypted value_
 
+
+## Share data using Services Behaviour Subject
+
+#### Step 1 : add below line in shares.services.ts
+```javascript 
+    import { Injectable } from '@angular/core';
+    import { BehaviorSubject } from 'rxjs';
+    @Injectable({
+        providedIn: 'root'
+    })
+    export class SharedService {
+    
+     dataShare: BehaviorSubject<any> = new BehaviorSubject<any>(true);
+     dataShareObs = this.dataShare.asObservable();
+     
+     update(data: any) {
+       this.dataShare.next(data);
+     }
+    }
+```
+#### Step 2 go to the component from where you want to send data
+Add below lines in that component
+```javascript 
+    import { SharedService } from '../services/shared.service';
+    export class myFirstComponent {
+        constructor (private _sharedService:SharedService) {
+            _sharedService.update('Hi from first component');
+        }
+    }
+```
+
+#### Step 3 go to the component from where you want access data
+Add below lines in that component
+```javascript 
+    import { SharedService } from '../services/shared.service';
+    export class mySecondComponent {
+        constructor (private _sharedService:SharedService) {
+            _sharedService.dataShareObs.subscribe(res => {
+                console.log(res);
+            });
+        }
+    }
+```
+
+    
