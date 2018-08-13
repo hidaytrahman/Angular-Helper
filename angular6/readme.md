@@ -153,4 +153,29 @@ Add below lines in that component
     }
 ```
 
-    
+## Directives with ElementRef
+
+### Add below codes in custom.directive.ts file
+
+```javascript
+
+import { Directive, ElementRef } from '@angular/core';
+
+@Directive({
+  selector: '[appHighlight]'
+})
+export class HighlightDirective {
+    constructor(el: ElementRef) {
+       el.nativeElement.style.backgroundColor = 'yellow';
+    }
+}
+
+```
+### import custom directive into app.module.ts
+
+### now use directive as a attribute appHighlight
+```javascript
+  <p appHighlight>
+    Hey everyone !
+  </p>
+  ```
