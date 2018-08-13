@@ -179,3 +179,48 @@ export class HighlightDirective {
     Hey everyone !
   </p>
   ```
+
+## Filter using Custom Pipe in Angular with JSON data
+
+__1. create custom pipe with name filter.pipe.ts and put below code__
+
+```javascript
+import { Pipe, PipeTransform } from '@angular/core';
+
+@Pipe({
+    name: 'filter'
+})
+
+export class FilterPipe implements PipeTransform {
+
+    transform(items: any[], searchText: string): any {
+        if ( !items ) { return []; }
+        if ( !searchText ) { return items; }
+
+        searchText = searchText.toLowerCase();
+
+        return items.filter( it => {
+            return JSON.stringify(it).toLowerCase().includes(searchText);
+        });
+    }
+}
+```
+
+__2. import filter.pipe.ts into app.module.ts and put class name in direction section__
+
+```javascript
+import { FilterPipe } from './pipes/filter.pipe';
+declarations: [
+    FilterPipe
+  ],
+
+```
+
+__3. Now use as a pipe in your component __
+```javascript
+ <tr *ngFor="let user of usersList | filter: searchNow">
+    <td>{{user?.id}}</td>
+    <td>{{user?.name}}</td>
+
+  </tr>
+  ```
