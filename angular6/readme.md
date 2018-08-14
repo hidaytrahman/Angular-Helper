@@ -1,5 +1,20 @@
 # Angular 6 Specific
 
+--------
+### VIEW ALSO:
+
+| Properties | Action |
+| :---         |     :---:    |
+| HttpClientModule, HttpClient - Angular 5+   | [Go](#httpclientmodule-httpclient---angular-5)  |
+| Get Request with Header parameters   | [Go](#get-request-with-header-parameters)     |
+| Share data using Services Behaviour Subject   | [Go](#share-data-using-services-behaviour-subject)     |
+| Directives with ElementRef   | [Go](#directives-with-elementref)     |
+| Filter using Custom Pipe in Angular with JSON data   | [Go](#filter-using-custom-pipe-in-angular-with-json-data)     |
+
+
+
+--------
+
 ## HttpClientModule, HttpClient - Angular 5+
 Step 1 : add below line in app.module.ts
 
